@@ -5,12 +5,19 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
-        <img id="GreatWave" src="GreatWave.png"> 
-      </a-assets>
+      <a-sky color="#000"></a-sky>
+      <!-- <a-sky color="#FCFBF4"></a-sky> -->
 
-      <a-sky src="GreatWave.png" rotation="0 -90 0"></a-sky>
+      
+      <a-entity id="wrapper" geometry="primitive: box; width: 8; height: 8; depth: 8"
+            material="color: transparent; wireframe: true; opacity: 0.5; side: double"
+            position="0 2 -10">
+            <a-entity id="myBox" geometry="primitive: box; width: 1; height: 1; depth: 1"
+            material="color: transparent; wireframe: true; opacity: 0.5; side: double"
+            position="0 0 0"></a-entity>
+            <a-box position="0 0 0" rotation="0 0 0" width="2" height="2" depth="2" color="#234371"></a-box>
 
+          </a-entity>
       <a-camera>
         <a-cursor></a-cursor>
       </a-camera>
