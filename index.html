@@ -5,19 +5,26 @@
   </head>
   <body>
     <a-scene>
-      <a-sky color="#000"></a-sky>
-      <!-- <a-sky color="#FCFBF4"></a-sky> -->
+      <!-- <a-sky color="#0C0D04"></a-sky> -->
+      <a-sky color="#FCFBF4"></a-sky>
 
       
-      <a-entity id="parent-cube" geometry="primitive: box; width: 8; height: 8; depth: 8"
+      <a-entity id="parent-cube" geometry="primitive: box; width: 8.5; height: 8.5; depth: 8.5"
             material="color: transparent; wireframe: true; opacity: 0.5; side: double"
             position="0 2 -10">
             
-            <a-box position="3 -3 3" rotation="0 0 0" width="2" height="2" depth="2" color="#234371"></a-box>
-            <a-box position="3 0 3" rotation="0 0 0" width="2" height="2" depth="2" color="#C14634"></a-box>
-            <a-box position="-1.5 -1.5 1.5" rotation="0 0 0" width="5" height="5" depth="5" color="#D0D2D2"></a-box>
-            <a-box position="1.5 3 2" rotation="0 0 0" width="5" height="2" depth="4" color="#E1BE56"></a-box>
+            <a-box position="2.625 -2.75 0" rotation="0 0 0" width="2.75" height="2.5" depth="8" color="#234371"></a-box>   <!-- bottom cube white -->
+            <a-box position="2.625 0.5 3" rotation="0 0 0" width="2.75" height="1" depth="2" color="#BBBEC4"></a-box> <!-- top small wide white -->
+            <a-box position="2.625 -0.75 3" rotation="0 0 0" width="2.75" height="1" depth="2" color="#BBBEC4"></a-box> <!-- bottom small wide white -->
 
+            <a-box position="-1.5 -1.5 2.5" rotation="0 0 0" width="5" height="5" depth="3" color="#C14634"></a-box> <!-- big red -->
+            <a-box position="-0.75 2.75 2" rotation="0 0 0" width="1" height="3" depth="4" color="#D0D2D2"></a-box> <!-- tall white -->
+            <a-box position="0.5 3.75 2" rotation="0 0 0" width="1" height="1" depth="4" color="#234371"></a-box> <!-- small top blue -->
+            <a-box position="2.625 3.75 2" rotation="0 0 0" width="2.75" height="1" depth="4" color="#BBBEC4"></a-box> <!-- wide top white -->
+            <a-box position="0.5 2.125 2" rotation="0 0 0" width="1" height="1.75" depth="4" color="#0C0D04"></a-box> <!-- tall top row bottom black -->
+            <a-box position="2.625 2.125 2" rotation="0 0 0" width="2.75" height="1.75" depth="4" color="#D0D2D2"></a-box> <!-- midsize white -->
+            <a-box position="-2.75 2.75 1.5" rotation="0 0 0" width="2.5" height="3" depth="5" color="#E1BE56"></a-box> <!-- yellow top left-->
+            <a-box position="3 0 0" rotation="0 0 0" width="2" height="2" depth="2" color="#E1BE56"></a-box> <!-- yellow -->
           </a-entity>
       <a-camera>
         <a-cursor></a-cursor>
