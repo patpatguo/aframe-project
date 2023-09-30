@@ -19,10 +19,10 @@
       <a-entity id="parent-cube" geometry="primitive: box; width: 8.5; height: 8.5; depth: 8.5"
             material="color: transparent; opacity: 0"
             position="0 2 -10"
-            animation="property: rotation; to: 0 360 0; dur: 5000; easing: easeInOutCubic">
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: easeInOutCirc">
             
             <!-- black border box -->
-            <a-box position="0 0 0" width="7.9" height="8.5" depth="7.9" color="#0C0D04"></a-box>
+            <a-box position="0 0.125 0" width="7.9" height="8.25" depth="7.9" color="#0C0D04"></a-box>
 
             <!-- front facing cubes -->
             <a-box position="-2.75 2.75 1.5" width="2.5" height="3" depth="5" color="#E1BE56"></a-box> <!-- yellow top left -->
